@@ -1,0 +1,9 @@
+%b Etsy Shop: #{@etsy_shop_name}
+%br
+%b Owner: #{@etsy_seller_first_name} #{@etsy_seller_last_name}
+%br
+%br
+= image_tag @etsy_user_avatar
+%br
+- @images.each do |image|
+	= image_tag image["url_75x75"]
